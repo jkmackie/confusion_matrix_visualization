@@ -34,3 +34,9 @@ Optionally, set the figure size and font size.  Otherwise, the defaults are used
 *For example:  figsize = (15,6) and fontsize = 16.*
 
 My function is different from existing solutions in three ways.  Redundant class pairs, which are zero, are hidden along with the unneeded color bar scale (may be revealed by editing function).  The function plots both count and percentage format by default.  The value alignment issue, where numbers appear outside the matrix, is fixed.
+
+### Advanced Use Case:
+Here is a scenario where we are predicting one of seven classes: [1,2,3,4,5,6,7]. The benefit of having both percentages and counts side-by-side is revealed.
+
+**Plot Confusion Matrix Function:**
+![Alt text](images/seven-labels.PNG)
