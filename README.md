@@ -16,7 +16,7 @@ The answer is a **multiclass confusion matrix**.  Scikit Learn provides a [confu
 
 But, how do we read and interpret this format?  The solution is my function, which converts the matrix to heatmaps with captions!  Both a regular matrix with counts and a "normalized" matrix with decimal percentages are plotted.
 
-**Plot Confusion Matrix Function:**
+**Plot Confusion Matrix Function Output:**
 ![Alt text](images/cm-heatmap.PNG)
 
 
@@ -36,7 +36,9 @@ Optionally, set the figure size and font size.  Otherwise, the defaults are used
 My function is different from existing solutions in three ways.  Redundant class pairs, which are zero, are hidden along with the unneeded color bar scale (may be revealed by editing function).  The function plots both count and percentage format by default.  The value alignment issue, where numbers appear outside the matrix, is fixed.
 
 ### Advanced Use Case:
-Here is a scenario where we are predicting one of seven classes: [1,2,3,4,5,6,7]. The benefit of having both percentages and counts side-by-side is revealed.
+Here is a scenario where we are predicting one of seven classes: [1,2,3,4,5,6,7].  The benefit of plotting percentages and counts side-by-side is illustrated.  In "Normalized", we see Class 6 predictions are less accurate than the first glance at "Counts".  Otherwise, we have to review the whole Class 6 row in "Counts" to realize accuracy is lower.
 
-**Plot Confusion Matrix Function:**
-![Alt text](images/seven-labels.PNG)
+We also see the model is weak at successfully predicting Classes 1-3.  For example, The model often predicts Class 2 as Class 1.
+
+**Confusion Matrix Shows Model Tuning Issues:**
+![Alt text](images/seven-labels-circled.PNG)
