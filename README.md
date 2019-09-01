@@ -32,8 +32,8 @@ Where confusion matrix is the sklearn confusion matrix and class_names are the c
 
 Optionally, set the figure size and font size.  Otherwise, the defaults are used.
 
-* **figsize = (width, height)**    
-* **fontsize = size_in_points**
+* **`figsize = (width, height)`** 
+* **`fontsize = size_in_points`**
 
 *For example:  figsize = (15,6) and fontsize = 16.*
 
