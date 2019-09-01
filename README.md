@@ -3,7 +3,7 @@
 ***
 Suppose we are tuning a multiclass model that predicts three possible results: ant, bird, or cat.  The model always predicts ants accurately, but is wrong classifying birds.  How do we measure this so we can tune our model?
 
-**True versus Predicted Class:**
+<ins>**True versus Predicted Class:**</ins>
 
 ![Alt text](images/Example-category-data.PNG)
 
@@ -11,7 +11,7 @@ The answer is a **multiclass confusion matrix**.  Scikit Learn provides a [confu
 
 For our scenario, the matrix looks like this:
 
-**sklearn confusion_matrix:**
+<ins>**sklearn confusion_matrix:**</ins>
 
 ![Alt text](images/sklearn-confusion-matrix.PNG)
 
@@ -20,7 +20,7 @@ But, how do we read and interpret this format?  The solution is my function, whi
 In "Counts", sum the row to get the true number of a class.  There are three cats.  In "Normalized", sum the row to see the class percentages total 1.  A third of the cats are predicted to be ants; two-thirds of the cats are correctly labeled cats.
 ***
 
-**Plot Confusion Matrix Function Output:**
+<ins>**Plot Confusion Matrix Function Output:**</ins>
 ![Alt text](images/cm-heatmap.PNG)
 
 ***
@@ -44,8 +44,7 @@ Here is a scenario where we are predicting one of seven classes: [1,2,3,4,5,6,7]
 
 We also see the model is weak at successfully predicting Classes 1-3.  For example, the model often predicts  the true Class 2 is Class 1 and vice-versa.
 
-**Confusion Matrix Shows Model Tuning Issues:**
-
+<ins>**Confusion Matrix Shows Model Tuning Issues:**</ins>
 
 ![Alt text](images/seven-labels-circled.PNG)
 
