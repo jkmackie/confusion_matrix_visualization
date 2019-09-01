@@ -16,13 +16,12 @@ For our scenario, the matrix looks like this:
 ![Alt text](images/sklearn-confusion-matrix.PNG)
 
 But, how do we read and interpret this format?  The solution is my function, which converts the matrix to heatmaps with captions!  Both a regular matrix with counts and a "normalized" matrix with decimal percentages are plotted.
-
-In "Counts", sum the row to get the true number of a class.  There are three cats.  In "Normalized", sum the row to see the class percentages total 1.  A third of the cats are predicted to be ants; two-thirds of the cats are correctly labeled cats.
 ***
 
 <ins>**Plot Confusion Matrix Function Output:**</ins>
 ![Alt text](images/cm-heatmap.PNG)
 
+In "Counts", sum the row to get the true number of a class.  There are three cats.  In "Normalized", sum the row to see the class percentages total 1.  A third of the cats are predicted to be ants; two-thirds of the cats are correctly labeled cats.
 ***
 ### Use the function as follows:
 
