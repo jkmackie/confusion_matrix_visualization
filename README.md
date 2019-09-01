@@ -1,5 +1,5 @@
 ## Confusion Matrix Visualization
-*Easy-to-read Multiclass confusion matrix.  Shows color-coded counts and percentages.*
+*Easy-to-read multiclass confusion matrix.  Shows color-coded counts and percentages.*
 ***
 We are tuning a multiclass model that predicts three possible results: ant, bird, or cat.  Suppose the model always predicts ants accurately, but is wrong classifying birds.  How do we measure this so we can tune our model?
 
@@ -7,7 +7,7 @@ We are tuning a multiclass model that predicts three possible results: ant, bird
 
 ![Alt text](images/Example-category-data.PNG)
 
-The solution is a multiclass confusion matrix.  Scikit Learn provides a [confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) tool.  For our scenario, the matrix looks like this:
+The solution is a **multiclass confusion matrix**.  Scikit Learn provides a [confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) tool.  For our scenario, the matrix looks like this:
 
 **sklearn confusion_matrix:**
 
@@ -31,3 +31,5 @@ Optionally, set the figure size and font size.  Otherwise, the defaults are used
 * **fontsize = size_in_points**
 
 For example:  figsize = (15,6) and fontsize = 16.
+
+My function is different from existing solutions in three ways.  Redundant class pairs, which are zero, are hidden along with the unneeded color bar scale (may be revealed by editing function).  The function plots both count and percentage format by default.  The value alignment issue, where numbers appear outside the matrix, is fixed.
