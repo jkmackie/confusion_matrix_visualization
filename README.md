@@ -1,19 +1,23 @@
 ## Confusion Matrix Visualization
 *Easy-to-read multiclass confusion matrix.  Shows color-coded counts and percentages.*
 ***
-We are tuning a multiclass model that predicts three possible results: ant, bird, or cat.  Suppose the model always predicts ants accurately, but is wrong classifying birds.  How do we measure this so we can tune our model?
+Suppose we are tuning a multiclass model that predicts three possible results: ant, bird, or cat.  The model always predicts ants accurately, but is wrong classifying birds.  How do we measure this so we can tune our model?
 
 **True versus Predicted Class:**
 
 ![Alt text](images/Example-category-data.PNG)
 
-The answer is a **multiclass confusion matrix**.  Scikit Learn provides a [confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) tool.  For our scenario, the matrix looks like this:
+The answer is a **multiclass confusion matrix**.  Scikit Learn provides a [confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) tool.  It shows the count of True categories and where they were predicted to fall.  There are three true cats.  The model predicts two of the three are cats.  The third is predicted as an ant.
+
+For our scenario, the matrix looks like this:
 
 **sklearn confusion_matrix:**
 
 ![Alt text](images/sklearn-confusion-matrix.PNG)
 
 But, how do we read and interpret this format?  The solution is my function, which converts the matrix to heatmaps with captions!  Both a regular matrix with counts and a "normalized" matrix with decimal percentages are plotted.
+
+In "Counts", sum the row to get the true number of a class.  There are three cats.  In "Normalized", sum the row to see the class percentages total 1.  A third of the cats are predicted to be ants; two-thirds of the cats are correctly labeled cats.
 ***
 
 **Plot Confusion Matrix Function Output:**
