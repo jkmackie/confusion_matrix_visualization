@@ -7,17 +7,24 @@ We are tuning a multiclass model that predicts three possible results: ant, bird
 
 ![Alt text](images/Example-category-data.PNG)
 
-The solution is a **multiclass confusion matrix**.  Scikit Learn provides a [confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) tool.  For our scenario, the matrix looks like this:
+The answer is a **multiclass confusion matrix**.  Scikit Learn provides a [confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) tool.  For our scenario, the matrix looks like this:
+
 
 **sklearn confusion_matrix:**
 
 ![Alt text](images/sklearn-confusion-matrix.PNG)
 
+
+
+
+
 But, how do we read and interpret this format?  The solution is my function, which converts the matrix to heatmaps with captions!  Both a regular matrix with counts and a "normalized" matrix with decimal percentages are plotted.
+
 
 
 **Plot Confusion Matrix Function:**
 ![Alt text](images/cm-heatmap.PNG)
+
 
 Use the function as follows:
 
