@@ -15,8 +15,7 @@ For our scenario, the matrix looks like this:
 
 ![Alt text](images/sklearn-confusion-matrix.PNG)
 
-But, how do we read and interpret this format?  The solution is my function, which converts the matrix to heatmaps with captions!  Both a regular matrix with counts and a "normalized" matrix with decimal percentages are plotted.
-***
+But, how do we read and interpret this format?  The solution is my function, which converts the matrix to heatmaps with captions!  Both a regular matrix with counts and a "normalized" matrix with decimal percentages are plotted below.
 
 <ins>**Plot Confusion Matrix Function Output:**</ins>
 ![Alt text](images/cm-heatmap.PNG)
