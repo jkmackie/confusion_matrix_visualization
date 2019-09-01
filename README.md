@@ -12,9 +12,9 @@ The answer is a **multiclass confusion matrix**.  Scikit Learn provides a [confu
 **sklearn confusion_matrix:**
 
 ![Alt text](images/sklearn-confusion-matrix.PNG)
-***
 
 But, how do we read and interpret this format?  The solution is my function, which converts the matrix to heatmaps with captions!  Both a regular matrix with counts and a "normalized" matrix with decimal percentages are plotted.
+***
 
 **Plot Confusion Matrix Function Output:**
 ![Alt text](images/cm-heatmap.PNG)
@@ -22,7 +22,7 @@ But, how do we read and interpret this format?  The solution is my function, whi
 
 ### Use the function as follows:
 
-**plot_confusion_matrix(confusion_matrix, class_names)**
+**`plot_confusion_matrix(confusion_matrix, class_names)`**
 
 Where confusion matrix is the sklearn confusion matrix and class_names are the class labels we used for sklearn.
 
