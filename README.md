@@ -45,6 +45,8 @@ Here is a scenario where we are predicting one of seven classes: [1,2,3,4,5,6,7]
 We also see the model is weak at successfully predicting Classes 1-3.  For example, the model often predicts  the true Class 2 is Class 1 and vice-versa.
 
 **Confusion Matrix Shows Model Tuning Issues:**
+
+
 ![Alt text](images/seven-labels-circled.PNG)
 
 *Please contact me know if you have any feedback:  **jmackie at gmail dot com***
