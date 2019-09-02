@@ -60,9 +60,16 @@ Below, the model correctly predicts one of the two Fraud transactions--everythin
 
 ![Alt text](images/unbalanced-classes.PNG)
 
-We must carefully interpret our result.  "Counts" says we only misclassified once.  But, "Normalized" reveals we missed half the Fraud!  If our goal is to stop Fraud, it may be best to tune the model to aggresively predict fraud, at the cost of flagging some NoFraud as Fraud.
+We must carefully interpret our result.  "Counts" says we only misclassified once.  But, "Normalized" reveals we missed half the Fraud!  If our goal is to stop Fraud, tune the model to aggresively predict fraud, at the cost of flagging some NoFraud as Fraud.
 
 This example was contrived for simplicity.  In reality, there might be 200,000 rather than 20 transactions.  The true fraud rate might be an even lower percentage.
 
+Here is Confusion Matrix terminology illustrated with our fraud prediction scenario.
+* **True Positives (TP) - Fraud correctly predicted**
+* **False Positives (FP) - NoFraud wrongly predicted**
+* **True Negatives (TN) - NoFraud correctly predicted**
+* **False Negatives (FN) - NoFraud wrongly predicted**
+
+This terminology is used to communicate confusion matrix results.  These terms are used in various classification [metrics](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c) like precision, recall, and F1 score.
 
 *Please contact me know if you have any feedback:  **jmackie at gmail dot com***
