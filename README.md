@@ -62,7 +62,7 @@ Below, the model correctly predicts one of the two Fraud transactions--everythin
 
 We must carefully interpret our result.  "Counts" says we only misclassified once.  But, "Normalized" reveals we missed half the Fraud!  If our goal is to stop Fraud, it may be best to tune the model to aggresively predict fraud, at the cost of flagging some NoFraud as Fraud.
 
-This example was contrived for simplicity.  In reality, there might be 200,000 rather than 20 transactions.  The true fraud rate might be 3%, rather than 10%.
+This example was contrived for simplicity.  In reality, there might be 200,000 rather than 20 transactions.  The true fraud rate might be an even lower percentage.
 
 
 *Please contact me know if you have any feedback:  **jmackie at gmail dot com***
