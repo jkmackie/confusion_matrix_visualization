@@ -46,4 +46,16 @@ We also see the model is weak at successfully predicting Classes 1-3.  For examp
 
 ![Alt text](images/seven-labels-circled.PNG)
 
+### What about Unbalanced Class Labels?:
+Imagine we are predicting "Fraud" or "NoFraud", like a credit card transaction.  These classes are called **unbalanced** because there is NoFraud most of the time.  In truth, there is 90% NoFraud or 18 out of 20 times.  The remaining 10% is fraud, occurring 2 times.  The model correctly predicts one of the two Fraud transactions--everything else is labeled NoFraud.
+
+<ins>**Unbalanced Class Labels - NoFraud and Fraud:**</ins>
+
+![Alt text](images/unbalanced-classes.PNG)
+
+We must carefully interpret our result.  "Counts" says we only misclassified once.  But, "Normalized" reveals we missed half the Fraud!  If our goal is to stop Fraud, it may be best to tune the model to aggresively predict fraud, at the cost of flagging some NoFraud as Fraud.
+
+This example was contrived for simplicity.  In reality, there might be 200,000 rather than 20 transactions.  The true fraud rate might be 3%, rather than 10%.
+
+
 *Please contact me know if you have any feedback:  **jmackie at gmail dot com***
