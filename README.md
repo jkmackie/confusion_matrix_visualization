@@ -65,10 +65,10 @@ We must carefully interpret our result.  "Counts" says we only misclassified onc
 This example was contrived for simplicity.  In reality, there might be 200,000 rather than 20 transactions.  The true fraud rate might be an even lower percentage.
 
 Here is Confusion Matrix terminology illustrated with our fraud prediction scenario.
-* **True Positives (TP) - Fraud correctly predicted**
-* **False Positives (FP) - NoFraud wrongly predicted**
-* **True Negatives (TN) - NoFraud correctly predicted**
-* **False Negatives (FN) - NoFraud wrongly predicted**
+* **True Positives (TP) - Fraud *correctly* predicted**
+* **False Positives (FP) - Fraud *wrongly* predicted**
+* **True Negatives (TN) - NoFraud *correctly* predicted**
+* **False Negatives (FN) - NoFraud *wrongly* predicted**
 
 This terminology is used to communicate confusion matrix results.  These terms are used in various classification [metrics](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c) like precision, recall, and F1 score.
 
