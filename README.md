@@ -70,6 +70,6 @@ Here is Confusion Matrix terminology illustrated with our fraud prediction scena
 * **True Negatives (TN) - NoFraud *correctly* predicted**
 * **False Negatives (FN) - NoFraud *wrongly* predicted**
 
-This terminology is used to communicate confusion matrix results.  These terms are used in various classification [metrics](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c) like precision, recall, and F1 score.
+These terms communicate confusion matrix results.  The terms are also used in classification [metrics](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c) like precision, recall, and F1 score.
 
-*Please contact me know if you have any feedback:  **jmackie at gmail dot com***
+*Please email me with any feedback:  **jmackie at gmail dot com***
