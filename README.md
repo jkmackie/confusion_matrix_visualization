@@ -72,4 +72,4 @@ Here is Confusion Matrix terminology illustrated with our fraud prediction scena
 
 These terms communicate confusion matrix results.  The terms are also used in classification [metrics](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c) like precision, recall, and F1 score.
 
-*Please email me with any feedback:  **jmackie at gmail dot com***
+*Please email me with any feedback:  **jmackie "at" gmail "dot" com***
