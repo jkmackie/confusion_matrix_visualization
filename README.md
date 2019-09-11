@@ -28,12 +28,14 @@ In "Counts", sum the row to get the true number of a class.  There are three cat
 
 Where confusion matrix is the sklearn confusion matrix and class_names are the class labels we used for sklearn.
 
-Optionally, set the figure size and font size.  Otherwise, the defaults are used.
+Optionally, show errors only and set figure/font size.  Otherwise, the defaults are used.
 
+* **`errors_only = True`** 
 * **`figsize = (width, height)`** 
 * **`fontsize = size_in_points`**
 
-*For example:  figsize = (15,6) and fontsize = 16.*
+*For example:  figsize = (15,6) and fontsize = 16.  If errors_only = True causes a row total of zero, there will be
+a divide-by-zero warning.*
 
 My function is different from existing solutions.  Class pairs which are zero are hidden.  The color bar scale is hidden by default (may be revealed by editing function).  The function plots both count and percentage format by default.  The value alignment issue, where numbers appear outside the matrix due to a Matplotlib 3.1.1 [bug](https://github.com/matplotlib/matplotlib/issues/14675), is fixed.
 
