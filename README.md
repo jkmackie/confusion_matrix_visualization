@@ -28,7 +28,7 @@ In "Counts", sum the row to get the true number of a class.  There are three cat
 
 Where confusion matrix is the sklearn confusion matrix and class_names are the class labels we used for sklearn.
 
-Optionally, show errors only and set figure/font size.  Otherwise, the defaults are used.
+Optionally, keep errors only and set figure/font size.  Otherwise, the defaults are used.
 
 * **`errors_only = True`** 
 * **`figsize = (width, height)`** 
@@ -37,7 +37,7 @@ Optionally, show errors only and set figure/font size.  Otherwise, the defaults 
 *For example:  figsize = (15,6) and fontsize = 16.  If errors_only = True causes a row total of zero, there will be
 a divide-by-zero warning.*
 
-My function is different from existing solutions.  Class pairs which are zero are hidden.  The color bar scale is hidden by default (may be revealed by editing function).  The function plots both count and percentage format by default.  The value alignment issue, where numbers appear outside the matrix due to a Matplotlib 3.1.1 [bug](https://github.com/matplotlib/matplotlib/issues/14675), is fixed.
+My function is different from existing solutions.  Class pairs which are zero are hidden.  Keep errors only can be enabled.  The function plots both count and percentage format by default.  The value alignment issue, where numbers appear outside the matrix due to a Matplotlib 3.1.1 [bug](https://github.com/matplotlib/matplotlib/issues/14675), is fixed.
 
 ### Advanced Use Case:
 Here is a scenario where we are predicting one of seven classes: [1,2,3,4,5,6,7].  The benefit of plotting percentages and counts side-by-side is illustrated.  In "Normalized", we see Class 6 predictions are less accurate than the first glance at "Counts".  Otherwise, we have to review the whole Class 6 row in "Counts" to realize accuracy is lower.
